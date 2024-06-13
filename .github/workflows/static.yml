@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '3.0.100'
-      - id: Deploy to Azure CDN
+      - name: Deploy to Azure CDN
         uses: cedric05/upload-to-azure-blob-storage@v1
         with:
             source-file: ./**/*.* # source file to upload

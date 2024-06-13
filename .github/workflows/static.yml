@@ -37,7 +37,10 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2.1.1
         with:
-            creds: ${{ secrets.AZ_CREDS }} # az create rbac output
+            client-id: ${{ vars.AZ_CLIENT_ID }}
+            tenant-id: ${{ vars.AZ_TENANT_ID }}
+            subscription-id: ${{ vars.AZ_SUBSCRIPTION_ID }}
+            client-secret: ${{ secrets.AZ_CLIENT_SECRET }}
             enable-AzPSSession: true
       - name: Deploy to Azure CDN
         uses: azure/powershell@v2

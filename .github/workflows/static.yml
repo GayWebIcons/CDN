@@ -40,7 +40,7 @@ jobs:
             source-file: ./**/*.* # source file to upload
             base-project-path: ./ # az backup directory
             target-file: ./ # az target file name
-            overwrite: 'true' #optional
+            overwrite: true #optional
             container-name: cdn # az storage container name
             storage-account-name: gaywebicons # az storage account name
             creds: ${{ secrets.AZ_CREDS }} # az create rbac output

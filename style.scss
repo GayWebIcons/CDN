@@ -1,0 +1,209 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8y27lo');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8y27lo#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8y27lo') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8y27lo') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8y27lo##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="gi-"], [class*=" gi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gi-grindr-wordmark {
+  &:before {
+    content: $gi-grindr-wordmark; 
+  }
+}
+.gi-grindr-wordmark-color .path1 {
+  &:before {
+    content: $gi-grindr-wordmark-color-path1;  
+    color: rgb(252, 179, 22);
+  }
+}
+.gi-grindr-wordmark-color .path2 {
+  &:before {
+    content: $gi-grindr-wordmark-color-path2;  
+    margin-left: -1.7138671875em;  
+    color: rgb(35, 31, 32);
+  }
+}
+.gi-grindr {
+  &:before {
+    content: $gi-grindr; 
+  }
+}
+.gi-grindr-color {
+  &:before {
+    content: $gi-grindr-color;     
+    color: #fcb316;
+  }
+}
+.gi-nkp {
+  &:before {
+    content: $gi-nkp; 
+  }
+}
+.gi-oink {
+  &:before {
+    content: $gi-oink; 
+  }
+}
+.gi-recon {
+  &:before {
+    content: $gi-recon; 
+  }
+}
+.gi-bbrt {
+  &:before {
+    content: $gi-bbrt; 
+  }
+}
+.gi-sniffies {
+  &:before {
+    content: $gi-sniffies; 
+  }
+}
+.gi-pornhub .path1 {
+  &:before {
+    content: $gi-pornhub-path1;  
+    color: rgb(68, 68, 68);
+  }
+}
+.gi-pornhub .path2 {
+  &:before {
+    content: $gi-pornhub-path2;  
+    margin-left: -3.56640625em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.gi-pornhub-color .path1 {
+  &:before {
+    content: $gi-pornhub-color-path1;  
+    color: rgb(247, 151, 29);
+  }
+}
+.gi-pornhub-color .path2 {
+  &:before {
+    content: $gi-pornhub-color-path2;  
+    margin-left: -3.56640625em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.gi-sean-cody .path1 {
+  &:before {
+    content: $gi-sean-cody-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.gi-sean-cody .path2 {
+  &:before {
+    content: $gi-sean-cody-path2;  
+    margin-left: -1.6240234375em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.gi-sean-cody-color .path1 {
+  &:before {
+    content: $gi-sean-cody-color-path1;  
+    color: rgb(35, 31, 32);
+  }
+}
+.gi-sean-cody-color .path2 {
+  &:before {
+    content: $gi-sean-cody-color-path2;  
+    margin-left: -1.6240234375em;  
+    color: rgb(255, 212, 0);
+  }
+}
+.gi-helixstudios {
+  &:before {
+    content: $gi-helixstudios; 
+  }
+}
+.gi-belami {
+  &:before {
+    content: $gi-belami; 
+  }
+}
+.gi-google-voice {
+  &:before {
+    content: $gi-google-voice; 
+  }
+}
+.gi-burner {
+  &:before {
+    content: $gi-burner; 
+  }
+}
+.gi-textnow {
+  &:before {
+    content: $gi-textnow; 
+  }
+}
+.gi-google-voice-color .path1 {
+  &:before {
+    content: $gi-google-voice-color-path1;  
+    color: rgb(0, 131, 45);
+  }
+}
+.gi-google-voice-color .path2 {
+  &:before {
+    content: $gi-google-voice-color-path2;  
+    margin-left: -0.986328125em;  
+    color: rgb(0, 131, 45);
+  }
+}
+.gi-google-voice-color .path3 {
+  &:before {
+    content: $gi-google-voice-color-path3;  
+    margin-left: -0.986328125em;  
+    color: rgb(0, 131, 45);
+  }
+}
+.gi-google-voice-color .path4 {
+  &:before {
+    content: $gi-google-voice-color-path4;  
+    margin-left: -0.986328125em;  
+    color: rgb(52, 168, 83);
+  }
+}
+.gi-google-voice-color .path5 {
+  &:before {
+    content: $gi-google-voice-color-path5;  
+    margin-left: -0.986328125em;  
+    color: rgb(52, 168, 83);
+  }
+}
+.gi-google-voice-color .path6 {
+  &:before {
+    content: $gi-google-voice-color-path6;  
+    margin-left: -0.986328125em;  
+    color: rgb(52, 168, 83);
+  }
+}
+.gi-google-voice-color .path7 {
+  &:before {
+    content: $gi-google-voice-color-path7;  
+    margin-left: -0.986328125em;  
+    color: rgb(52, 168, 83);
+  }
+}
+

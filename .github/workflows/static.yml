@@ -39,6 +39,7 @@ jobs:
             subscription-id: ${{ vars.AZ_SUBSCRIPTION_ID }}
             creds: '{"clientSecret": "${{ secrets.AZ_CLIENT_SECRET }}", "tenantId": "${{ vars.AZ_TENANT_ID }}", "clientId": "${{ vars.AZ_CLIENT_ID }}", "subscriptionId": "${{ vars.AZ_SUBSCRIPTION_ID }}" }'
             enable-AzPSSession: true
+            auth-type: SERVICE_PRINCIPAL
       - name: Deploy to Azure CDN
         uses: azure/powershell@v2
         with:

@@ -31,8 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
-      - name: Upload Static Content
-        uses: armhil/azure-blobs-content-uploader@1.0.0
+      - uses: actions/setup-dotnet@v1
         with:
-          azureBlobConfiguration: ${{ secrets.AZ_BLOB_CONFIGURATION }} # could be any secret that you have, see below for the format
-          directoriesToUpload: '[{"shouldRecurse": "true", "baseContainerPath": "/" }]'
+          dotnet-version: '3.0.100'
+      - name: Deploy to Azure CDN
+        uses: AmrShrwnh/deploy-to-azure-blob-storage@master 
+        with:
+          enabled-static-website: 'true'
+          folder: '.'
+          connection-string: ${{ secrets.AZ_CONNECTION_STRING }}

@@ -34,13 +34,21 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '3.0.100'
-      - name: Deploy to Azure CDN
-        uses: cedric05/upload-to-azure-blob-storage@v1
+      - name: Azure Login
+        uses: azure/login@v2.1.1
         with:
-            source-file: ./**/*.* # source file to upload
-            base-project-path: ./ # az backup directory
-            target-file: ./ # az target file name
-            overwrite: true #optional
-            container-name: cdn # az storage container name
-            storage-account-name: gaywebicons # az storage account name
             creds: ${{ secrets.AZ_CREDS }} # az create rbac output
+            enable-AzPSSession: true
+      - name: Deploy to Azure CDN
+        uses: azure/powershell@v2
+        with:
+          azPSVersion: "latest"
+          inlineScript: |
+            $ctx = New-AzStorageContext -StorageAccountName gaywebicons -UseConnectedAccount
+
+            #Set variables
+            $path          = "./" 
+            $containerName = "cdn"
+
+            Get-ChildItem -Path $path -Recurse | ForEach-Object { Set-AzStorageBlobContent -File $_ -Container $containerName -Context $ctx }
+

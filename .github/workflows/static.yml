@@ -29,6 +29,8 @@ jobs:
       url: https://cdn.gaywebicons.xyz
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
       - name: Upload Static Content
         uses: armhil/azure-blobs-content-uploader@1.0.0
         with:

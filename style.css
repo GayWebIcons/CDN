@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'gay-icons';
-  src:  url('fonts/gay-icons.eot?8y27lo');
-  src:  url('fonts/gay-icons.eot?8y27lo#iefix') format('embedded-opentype'),
-    url('fonts/gay-icons.ttf?8y27lo') format('truetype'),
-    url('fonts/gay-icons.woff?8y27lo') format('woff'),
-    url('fonts/gay-icons.svg?8y27lo#gay-icons') format('svg');
+  font-family: 'gay-web-icons';
+  src:  url('fonts/gay-web-icons.eot?pr1reo');
+  src:  url('fonts/gay-web-icons.eot?pr1reo#iefix') format('embedded-opentype'),
+    url('fonts/gay-web-icons.ttf?pr1reo') format('truetype'),
+    url('fonts/gay-web-icons.woff?pr1reo') format('woff'),
+    url('fonts/gay-web-icons.svg?pr1reo#gay-web-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="gi-"], [class*=" gi-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gay-icons' !important;
+  font-family: 'gay-web-icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,24 +25,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gi-hornet:before {
+  content: "\e903";
+}
+.gi-manhunt:before {
+  content: "\e904";
+}
+.gi-gayromeo:before {
+  content: "\e905";
+}
+.gi-a4a:before {
+  content: "\e906";
+}
 .gi-grindr-wordmark:before {
   content: "\e90a";
 }
-.gi-grindr-wordmark-color .path1:before {
-  content: "\e90b";
-  color: rgb(252, 179, 22);
-}
-.gi-grindr-wordmark-color .path2:before {
-  content: "\e90c";
-  margin-left: -1.7138671875em;
-  color: rgb(35, 31, 32);
-}
 .gi-grindr:before {
   content: "\e90d";
-}
-.gi-grindr-color:before {
-  content: "\e90e";
-  color: #fcb316;
 }
 .gi-nkp:before {
   content: "\e90f";
@@ -59,41 +58,29 @@
 .gi-sniffies:before {
   content: "\e913";
 }
-.gi-pornhub .path1:before {
+.gi-scruff:before {
+  content: "\e907";
+}
+.gi-of:before {
+  content: "\e908";
+}
+.gi-jff:before {
+  content: "\e909";
+}
+.gi-tim:before {
+  content: "\e90b";
+}
+.gi-falcon:before {
+  content: "\e90c";
+}
+.gi-naked-sword:before {
+  content: "\e90e";
+}
+.gi-pornhub:before {
   content: "\e914";
-  color: rgb(68, 68, 68);
 }
-.gi-pornhub .path2:before {
-  content: "\e915";
-  margin-left: -3.56640625em;
-  color: rgb(0, 0, 0);
-}
-.gi-pornhub-color .path1:before {
-  content: "\e916";
-  color: rgb(247, 151, 29);
-}
-.gi-pornhub-color .path2:before {
-  content: "\e917";
-  margin-left: -3.56640625em;
-  color: rgb(0, 0, 0);
-}
-.gi-sean-cody .path1:before {
+.gi-sean-cody:before {
   content: "\e918";
-  color: rgb(0, 0, 0);
-}
-.gi-sean-cody .path2:before {
-  content: "\e919";
-  margin-left: -1.6240234375em;
-  color: rgb(255, 255, 255);
-}
-.gi-sean-cody-color .path1:before {
-  content: "\e91a";
-  color: rgb(35, 31, 32);
-}
-.gi-sean-cody-color .path2:before {
-  content: "\e91b";
-  margin-left: -1.6240234375em;
-  color: rgb(255, 212, 0);
 }
 .gi-helixstudios:before {
   content: "\e91c";
@@ -109,38 +96,4 @@
 }
 .gi-textnow:before {
   content: "\e902";
-}
-.gi-google-voice-color .path1:before {
-  content: "\e903";
-  color: rgb(0, 131, 45);
-}
-.gi-google-voice-color .path2:before {
-  content: "\e904";
-  margin-left: -0.986328125em;
-  color: rgb(0, 131, 45);
-}
-.gi-google-voice-color .path3:before {
-  content: "\e905";
-  margin-left: -0.986328125em;
-  color: rgb(0, 131, 45);
-}
-.gi-google-voice-color .path4:before {
-  content: "\e906";
-  margin-left: -0.986328125em;
-  color: rgb(52, 168, 83);
-}
-.gi-google-voice-color .path5:before {
-  content: "\e907";
-  margin-left: -0.986328125em;
-  color: rgb(52, 168, 83);
-}
-.gi-google-voice-color .path6:before {
-  content: "\e908";
-  margin-left: -0.986328125em;
-  color: rgb(52, 168, 83);
-}
-.gi-google-voice-color .path7:before {
-  content: "\e909";
-  margin-left: -0.986328125em;
-  color: rgb(52, 168, 83);
 }

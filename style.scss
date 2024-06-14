@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8y27lo');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8y27lo#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8y27lo') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8y27lo') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8y27lo##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?pr1reo');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?pr1reo#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?pr1reo') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?pr1reo') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?pr1reo##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,33 +27,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gi-hornet {
+  &:before {
+    content: $gi-hornet; 
+  }
+}
+.gi-manhunt {
+  &:before {
+    content: $gi-manhunt; 
+  }
+}
+.gi-gayromeo {
+  &:before {
+    content: $gi-gayromeo; 
+  }
+}
+.gi-a4a {
+  &:before {
+    content: $gi-a4a; 
+  }
+}
 .gi-grindr-wordmark {
   &:before {
     content: $gi-grindr-wordmark; 
   }
 }
-.gi-grindr-wordmark-color .path1 {
-  &:before {
-    content: $gi-grindr-wordmark-color-path1;  
-    color: rgb(252, 179, 22);
-  }
-}
-.gi-grindr-wordmark-color .path2 {
-  &:before {
-    content: $gi-grindr-wordmark-color-path2;  
-    margin-left: -1.7138671875em;  
-    color: rgb(35, 31, 32);
-  }
-}
 .gi-grindr {
   &:before {
     content: $gi-grindr; 
-  }
-}
-.gi-grindr-color {
-  &:before {
-    content: $gi-grindr-color;     
-    color: #fcb316;
   }
 }
 .gi-nkp {
@@ -81,56 +82,44 @@
     content: $gi-sniffies; 
   }
 }
-.gi-pornhub .path1 {
+.gi-scruff {
   &:before {
-    content: $gi-pornhub-path1;  
-    color: rgb(68, 68, 68);
+    content: $gi-scruff; 
   }
 }
-.gi-pornhub .path2 {
+.gi-of {
   &:before {
-    content: $gi-pornhub-path2;  
-    margin-left: -3.56640625em;  
-    color: rgb(0, 0, 0);
+    content: $gi-of; 
   }
 }
-.gi-pornhub-color .path1 {
+.gi-jff {
   &:before {
-    content: $gi-pornhub-color-path1;  
-    color: rgb(247, 151, 29);
+    content: $gi-jff; 
   }
 }
-.gi-pornhub-color .path2 {
+.gi-tim {
   &:before {
-    content: $gi-pornhub-color-path2;  
-    margin-left: -3.56640625em;  
-    color: rgb(0, 0, 0);
+    content: $gi-tim; 
   }
 }
-.gi-sean-cody .path1 {
+.gi-falcon {
   &:before {
-    content: $gi-sean-cody-path1;  
-    color: rgb(0, 0, 0);
+    content: $gi-falcon; 
   }
 }
-.gi-sean-cody .path2 {
+.gi-naked-sword {
   &:before {
-    content: $gi-sean-cody-path2;  
-    margin-left: -1.6240234375em;  
-    color: rgb(255, 255, 255);
+    content: $gi-naked-sword; 
   }
 }
-.gi-sean-cody-color .path1 {
+.gi-pornhub {
   &:before {
-    content: $gi-sean-cody-color-path1;  
-    color: rgb(35, 31, 32);
+    content: $gi-pornhub; 
   }
 }
-.gi-sean-cody-color .path2 {
+.gi-sean-cody {
   &:before {
-    content: $gi-sean-cody-color-path2;  
-    margin-left: -1.6240234375em;  
-    color: rgb(255, 212, 0);
+    content: $gi-sean-cody; 
   }
 }
 .gi-helixstudios {
@@ -156,54 +145,6 @@
 .gi-textnow {
   &:before {
     content: $gi-textnow; 
-  }
-}
-.gi-google-voice-color .path1 {
-  &:before {
-    content: $gi-google-voice-color-path1;  
-    color: rgb(0, 131, 45);
-  }
-}
-.gi-google-voice-color .path2 {
-  &:before {
-    content: $gi-google-voice-color-path2;  
-    margin-left: -0.986328125em;  
-    color: rgb(0, 131, 45);
-  }
-}
-.gi-google-voice-color .path3 {
-  &:before {
-    content: $gi-google-voice-color-path3;  
-    margin-left: -0.986328125em;  
-    color: rgb(0, 131, 45);
-  }
-}
-.gi-google-voice-color .path4 {
-  &:before {
-    content: $gi-google-voice-color-path4;  
-    margin-left: -0.986328125em;  
-    color: rgb(52, 168, 83);
-  }
-}
-.gi-google-voice-color .path5 {
-  &:before {
-    content: $gi-google-voice-color-path5;  
-    margin-left: -0.986328125em;  
-    color: rgb(52, 168, 83);
-  }
-}
-.gi-google-voice-color .path6 {
-  &:before {
-    content: $gi-google-voice-color-path6;  
-    margin-left: -0.986328125em;  
-    color: rgb(52, 168, 83);
-  }
-}
-.gi-google-voice-color .path7 {
-  &:before {
-    content: $gi-google-voice-color-path7;  
-    margin-left: -0.986328125em;  
-    color: rgb(52, 168, 83);
   }
 }
 

@@ -1,0 +1,54 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "cdn"
+  cancel-in-progress: true
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: CDN
+      url: https://cdn.gaywebicons.xyz
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+      - name: Deploy to Azure CDN
+        # You may pin to the exact commit or the version.
+        # uses: LanceMcCarthy/Action-AzureBlobUpload@ce90b2d1f7a7f0ddf7402d6be82efe0fb5c34283
+        uses: LanceMcCarthy/Action-AzureBlobUpload@v3.1.2
+        with:
+          # Azure Storage ConnectionString for the container (Azure Portal - select Storage Account - Access Keys blade).
+          connection_string: ${{ secrets.AZ_CONNECTION_STRING }}
+          # Blob Container name (e.g. my-container).
+          container_name: cdn
+          # The local folder containing all the files and subfolders to upload to the blob container (use a trailing slash).
+          source_folder: .
+          # The target folder to use in the blob container with (do not use a leading or trailing slash).
+          destination_folder: / # optional
+          # This option will delete all the blobs in destination_folder before uploading the new files.
+          clean_destination_folder: true # optional
+          # If you want the Action to fail and report an error if the source_folder is empty.
+          fail_if_source_empty: true # optional
+          # Set to false if you want all subfolders ignored.
+          is_recursive: true # optional, default is true
+          # If the blob exists it will be skipped, unless this is set to true.
+          delete_if_exists: true # optional

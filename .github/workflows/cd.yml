@@ -33,22 +33,36 @@ jobs:
         uses: actions/checkout@v4.1.7
       - name: Deploy to Azure CDN
         # You may pin to the exact commit or the version.
-        # uses: LanceMcCarthy/Action-AzureBlobUpload@ce90b2d1f7a7f0ddf7402d6be82efe0fb5c34283
-        uses: LanceMcCarthy/Action-AzureBlobUpload@v3.1.2
+        # uses: bacongobbler/azure-blob-storage-upload@50f7d898b7697e864130ea04c303ca38b5751c50
+        uses: bacongobbler/azure-blob-storage-upload@v3.0.0
         with:
-          # Azure Storage ConnectionString for the container (Azure Portal - select Storage Account - Access Keys blade).
-          connection_string: ${{ secrets.AZ_CONNECTION_STRING }}
-          # Blob Container name (e.g. my-container).
+          # The connection string for the storage account. Used if value is set. Either connection_string or sas_token must be supplied
+          connection_string: ${{ secrets.AZ_CONNECTION_STRING }} # optional
+          # The name of the storage account. Required if sas_token is used
+          account_name: gaywebicons # optional
+          # The name of the storage account container these assets will be uploaded to
           container_name: cdn
-          # The local folder containing all the files and subfolders to upload to the blob container (use a trailing slash).
-          source_folder: .
-          # The target folder to use in the blob container with (do not use a leading or trailing slash).
-          destination_folder: / # optional
-          # This option will delete all the blobs in destination_folder before uploading the new files.
-          clean_destination_folder: true # optional
-          # If you want the Action to fail and report an error if the source_folder is empty.
-          fail_if_source_empty: true # optional
-          # Set to false if you want all subfolders ignored.
-          is_recursive: true # optional, default is true
-          # If the blob exists it will be skipped, unless this is set to true.
-          delete_if_exists: true # optional
+          # The name of the directory you want to upload
+          source_dir: .
+          # Overwrite existing files in the destination container. Defaults to false
+          overwrite: true # optional
+        # # You may pin to the exact commit or the version.
+        # # uses: LanceMcCarthy/Action-AzureBlobUpload@ce90b2d1f7a7f0ddf7402d6be82efe0fb5c34283
+        # uses: LanceMcCarthy/Action-AzureBlobUpload@v3.1.2
+        # with:
+        #   # Azure Storage ConnectionString for the container (Azure Portal - select Storage Account - Access Keys blade).
+        #   connection_string: ${{ secrets.AZ_CONNECTION_STRING }}
+        #   # Blob Container name (e.g. my-container).
+        #   container_name: cdn
+        #   # The local folder containing all the files and subfolders to upload to the blob container (use a trailing slash).
+        #   source_folder: .
+        #   # The target folder to use in the blob container with (do not use a leading or trailing slash).
+        #   destination_folder: / # optional
+        #   # This option will delete all the blobs in destination_folder before uploading the new files.
+        #   clean_destination_folder: true # optional
+        #   # If you want the Action to fail and report an error if the source_folder is empty.
+        #   fail_if_source_empty: true # optional
+        #   # Set to false if you want all subfolders ignored.
+        #   is_recursive: true # optional, default is true
+        #   # If the blob exists it will be skipped, unless this is set to true.
+        #   delete_if_exists: true # optional

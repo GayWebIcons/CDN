@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'gay-web-icons';
-  src:  url('fonts/gay-web-icons.eot?4w27o');
-  src:  url('fonts/gay-web-icons.eot?4w27o#iefix') format('embedded-opentype'),
-    url('fonts/gay-web-icons.ttf?4w27o') format('truetype'),
-    url('fonts/gay-web-icons.woff?4w27o') format('woff'),
-    url('fonts/gay-web-icons.svg?4w27o#gay-web-icons') format('svg');
+  src:  url('fonts/gay-web-icons.eot?wqzzr0');
+  src:  url('fonts/gay-web-icons.eot?wqzzr0#iefix') format('embedded-opentype'),
+    url('fonts/gay-web-icons.ttf?wqzzr0') format('truetype'),
+    url('fonts/gay-web-icons.woff?wqzzr0') format('woff'),
+    url('fonts/gay-web-icons.svg?wqzzr0#gay-web-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -61,6 +61,9 @@
 .gi-sniffies:before {
   content: "\e913";
 }
+.gi-sniffies-filled:before {
+  content: "\e916";
+}
 .gi-scruff:before {
   content: "\e907";
 }
@@ -69,6 +72,9 @@
 }
 .gi-jff:before {
   content: "\e909";
+}
+.gi-jff-filled:before {
+  content: "\e917";
 }
 .gi-tim:before {
   content: "\e90b";
@@ -85,7 +91,7 @@
 .gi-sean-cody:before {
   content: "\e918";
 }
-.gi-helixstudios:before {
+.gi-helix-studios:before {
   content: "\e91c";
 }
 .gi-belami:before {

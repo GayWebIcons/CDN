@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4w27o');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4w27o#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?4w27o') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?4w27o') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?4w27o##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wqzzr0');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wqzzr0#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wqzzr0') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wqzzr0') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wqzzr0##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -87,6 +87,11 @@
     content: $gi-sniffies; 
   }
 }
+.gi-sniffies-filled {
+  &:before {
+    content: $gi-sniffies-filled; 
+  }
+}
 .gi-scruff {
   &:before {
     content: $gi-scruff; 
@@ -100,6 +105,11 @@
 .gi-jff {
   &:before {
     content: $gi-jff; 
+  }
+}
+.gi-jff-filled {
+  &:before {
+    content: $gi-jff-filled; 
   }
 }
 .gi-tim {
@@ -127,9 +137,9 @@
     content: $gi-sean-cody; 
   }
 }
-.gi-helixstudios {
+.gi-helix-studios {
   &:before {
-    content: $gi-helixstudios; 
+    content: $gi-helix-studios; 
   }
 }
 .gi-belami {

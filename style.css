@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'gay-web-icons';
-  src:  url('fonts/gay-web-icons.eot?wqzzr0');
-  src:  url('fonts/gay-web-icons.eot?wqzzr0#iefix') format('embedded-opentype'),
-    url('fonts/gay-web-icons.ttf?wqzzr0') format('truetype'),
-    url('fonts/gay-web-icons.woff?wqzzr0') format('woff'),
-    url('fonts/gay-web-icons.svg?wqzzr0#gay-web-icons') format('svg');
+  src:  url('fonts/gay-web-icons.eot?gi9kfs');
+  src:  url('fonts/gay-web-icons.eot?gi9kfs#iefix') format('embedded-opentype'),
+    url('fonts/gay-web-icons.ttf?gi9kfs') format('truetype'),
+    url('fonts/gay-web-icons.woff?gi9kfs') format('woff'),
+    url('fonts/gay-web-icons.svg?gi9kfs#gay-web-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="gi-"], [class*=" gi-"] {
+.gi {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'gay-web-icons' !important;
   speak: never;
@@ -75,6 +75,9 @@
 }
 .gi-jff-filled:before {
   content: "\e917";
+}
+.gi-4mf:before {
+  content: "\e919";
 }
 .gi-tim:before {
   content: "\e90b";
